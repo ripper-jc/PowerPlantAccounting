@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DAL.UnitOfWork
 {
-    internal interface IUnitOfWork
+    public interface IUnitOfWork
     {
     }
 }
