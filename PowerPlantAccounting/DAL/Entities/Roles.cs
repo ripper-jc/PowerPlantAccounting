@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace DAL.Entities
 {
-    internal class Street
+    public class Roles
     {
+        public int Id { get; set; }
+        public string Name { get; set; }
     }
 }

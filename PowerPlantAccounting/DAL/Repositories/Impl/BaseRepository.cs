@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Repositories.Impl
 {
-    internal class BaseRepository
+    public class BaseRepository
     {
     }
 }
