@@ -1,15 +1,16 @@
 ﻿namespace DAL.Repositories.Impl;
 
 using System.Linq.Expressions;
+using DAL.EF;
 using Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 public class BaseRepository<T> : IRepository<T> where T: class
 {
     private readonly DbSet<T> _set;
-    private readonly BaseDbContext _dbContext;
+    private readonly DBContext _dbContext;
 
-    public BaseRepository(BaseDbContext dbContext)
+    public BaseRepository(DBContext dbContext)
     {
         _dbContext = dbContext;
         _set = dbContext.Set<T>();

@@ -1,5 +1,6 @@
 namespace DAL.UnitOfWork;
 
+using DAL.EF;
 using Repositories.Impl;
 using Repositories.Interfaces;
 using UnitOfWork;
@@ -7,7 +8,7 @@ using UnitOfWork;
 public class EFUnitOfWork : IUnitOfWork
 {
     private readonly DBContext _dbContext;
-    private RoleREpository _rolesRepository;
+    private RoleRepository _rolesRepository;
     private UserRepository _userRepository;
 
     public EFUnitOfWork(DBContext dbContext)
@@ -15,19 +16,19 @@ public class EFUnitOfWork : IUnitOfWork
         _dbContext = dbContext;
     }
 
-    public IRolesRepository Menus
+    public IRolesRepository Roles
     {
         get
         {
             if (_rolesRepository == null)
             {
-                _rolesRepository = new RoleREpository(_dbContext);
+                _rolesRepository = new RoleRepository(_dbContext);
             }
             return _rolesRepository;
         }
     }
 
-    public IUserRepository Meals
+    public IUserRepository Users
     {
         get
         {

@@ -1,0 +1,6 @@
+@PowerPlantAccounting_HostAddress = http://localhost:5145
+
+GET {{PowerPlantAccounting_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
