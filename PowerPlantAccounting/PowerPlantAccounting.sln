@@ -5,7 +5,12 @@ VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL", "DAL\DAL.csproj", "{5579FDC7-CCDC-4D07-AC82-CA13793013F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerPlantAccounting", "PowerPlantAccounting\PowerPlantAccounting.csproj", "{13CD5BE3-2531-4A24-B4DD-FCB3DE6C1AC7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PowerPlantAccounting", "PowerPlantAccounting\PowerPlantAccounting.csproj", "{13CD5BE3-2531-4A24-B4DD-FCB3DE6C1AC7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5579FDC7-CCDC-4D07-AC82-CA13793013F2} = {5579FDC7-CCDC-4D07-AC82-CA13793013F2}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL.Tests", "DAL.Tests\DAL.Tests.csproj", "{71401A87-8D41-4163-8E62-816C071C0A1D}"
 	ProjectSection(ProjectDependencies) = postProject
 		{5579FDC7-CCDC-4D07-AC82-CA13793013F2} = {5579FDC7-CCDC-4D07-AC82-CA13793013F2}
 	EndProjectSection
@@ -24,6 +29,10 @@ Global
 		{13CD5BE3-2531-4A24-B4DD-FCB3DE6C1AC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13CD5BE3-2531-4A24-B4DD-FCB3DE6C1AC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13CD5BE3-2531-4A24-B4DD-FCB3DE6C1AC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71401A87-8D41-4163-8E62-816C071C0A1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71401A87-8D41-4163-8E62-816C071C0A1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71401A87-8D41-4163-8E62-816C071C0A1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71401A87-8D41-4163-8E62-816C071C0A1D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

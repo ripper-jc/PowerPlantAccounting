@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PowerPlantAccounting")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3b9be98e7fc659d7ca90090ae593a99aa8a472bc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9ca0f2ecc5cd855da595c4cbc30b08094c5f9943")]
 [assembly: System.Reflection.AssemblyProductAttribute("PowerPlantAccounting")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PowerPlantAccounting")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
